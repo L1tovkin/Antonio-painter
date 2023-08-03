@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <nav>
+        <h1>
+          <span>
+            Antonio
+          </span>
+          <img src="assets/roller-white.png" alt="paintbrush" class="brush" />
+        </h1>
+
+        <ul>
+          <li>
+            <a href="#artwork">Gallery</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="anchor" id="artwork"></a>
+      <section aria-label="artwork">
+        <div class="art-container">
+          <img
+            src="assets/cobblestoneCharm.png"
+            alt="Cobblestone Charm"
+            draggable="false"
+          />
+          <img
+            src="assets/dancingLight.png"
+            alt="Dancing Light"
+            draggable="false"
+          />
+          <img
+            src="assets/floralWhispers.png"
+            alt="Floral Whispers"
+            draggable="false"
+          />
+          <img
+            src="assets/lemonGroveDreams.png"
+            alt="Lemon Grove Dreams"
+            draggable="false"
+          />
+          <img
+            src="assets/mediterraneanReverie.png"
+            alt="Mediterranean Reverie"
+            draggable="false"
+          />
+          <img
+            src="assets/piazzaPassions.png"
+            alt="Piazza Passions"
+            draggable="false"
+          />
+          <img
+            src="assets/sailorsDelight.png"
+            alt="Sailor's Delight"
+            draggable="false"
+          />
+          <img
+            src="assets/twilightSerenity.png"
+            alt="Twilight Serenity"
+            draggable="false"
+          />
+          <img
+            src="assets/vineyardSymphony.png"
+            alt="Vineyard Symphony"
+            draggable="false"
+          />
+        </div>
+      </section>
+
+      <a class="anchor" id="about"></a>
+      <section
+        class="about animate-on-scroll"
+        data-animate-classes="about-content about-img"
+      >
+        <div class="about-content">
+          <h2>Meet Antonio</h2>
+          <div>
+            <p>
+              Antonio is a young, gifted painter who grew up in
+              coastal town of Positano, Italy. Growing up in
+              Amalfi Coast, Antonio developed a deep appreciation for
+              the breathtaking beauty of his surroundings. This passion for
+              nature and the colors led him to pursue a career in
+              painting.
+            </p>
+            <p>
+              Antonio studied fine arts at the Accademia di Belle Arti
+              in Florence, where he refined his skills under the guidance of
+              Italy's most accomplished painters. Antonio's artwork often
+              blends elements of impressionism and expressionism, resulting in a
+              unique and captivating style. His use of bold, vivid colors and
+              evocative brush strokes has garnered attention from collectors and
+              critics alike.
+            </p>
+            <p>
+              Antonio's work often centers on the interplay between the natural
+              landscape and human emotion, with subjects that range from serene
+              seaside to bustling Italian piazzas. As his reputation
+              continues to grow, Antonio is quickly becoming one of
+              the most promising up-and-coming painters of his generation.
+            </p>
+          </div>
+        </div>
+
+        <img
+          src="assets/painter.png"
+          alt="Antonio Headshot"
+          class="about-img"
+          draggable="false"
+        />
+      </section>
+
+      <a class="anchor" id="contact"></a>
+      <footer
+        class="animate-on-scroll"
+        data-animate-classes="contact-heading contact-form"
+      >
+        <h2 class="contact-heading">Get In Touch</h2>
+        <form class="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </footer>
+    </div>
+
+    <div class="blur" aria-hidden="true"></div>
+    <div class="paint-loader" aria-hidden="true">
+      <div class="paint red"></div>
+      <div class="paint white"></div>
+      <div class="paint green"></div>
+    </div>
+  </body>
+</html>
